@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!--Breadcrumb Start-->
+    <div class="pq-breadcrumb pq-bg-dark pq-bg-img-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav aria-label="breadcrumb">
+                        <div class="pq-breadcrumb-title">
+                            <h1>Contact Us</h1>
+                        </div>
+                        <div class="pq-breadcrumb-container">
+                            <ol class="breadcrumb align-items-center">
+                                <li class="breadcrumb-item"><a href="/"><i class="fa fa-home me-2"></i>Home</a>
+                                </li>
+                                <li class="breadcrumb-item active">Contact Us</li>
+                            </ol>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Breadcrumb End-->
+    
+    <!--Contacts & Forms Start-->
+    <section class="contact-form" style="padding-top: 20px;">
+        <div class="container">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-5">
+                    <div class="pq-bg-dark pq-contact-form-p">
+                        <div class="pq-section pq-style-1 text-left">
+                            <h5 class="pq-section-title pq-text-white" id="contacts" data-high_text="Contacts" data-title_text="Our Contacts" data-rough_color="#fd4a18" data-rough_type="underline">Our Contacts</h5>
+                            <p class="pq-section-description pq-text-white">Our team is always glad to hear from you, and your feedback can help us make our service even better.</p>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="pq-icon-box pq-style-5">
+                                        <div class="pq-icon">
+                                            <a href="#"><i class="ion ion-ios-location"></i></a>
+                                        </div>
+                                        <div class="pq-icon-box-content">
+                                            <h4 class="pq-text-white">Our Address</h4>
+                                            <p class="pq-text-white mb-0">3rd floor , M.M. Centre, Main Rd, Payyanur <br> Kerala 670307</p>
+                                        </div>
+                                    </div>
+                                    <div class="pq-icon-box pq-style-5">
+                                        <div class="pq-icon">
+                                            <a href="#"><i class="ion ion-email"></i></a>
+                                        </div>
+                                        <div class="pq-icon-box-content">
+                                            <h4 class="pq-text-white">E-Mail Address</h4>
+                                            <p class="pq-text-white mb-0">payyanur.knr@gteceducation.com</p>
+                                       
+                                        </div>
+                                    </div>
+                                    <div class="pq-icon-box pq-style-5">
+                                        <div class="pq-icon">
+                                            <a href="#"><i class="fas fa-phone"></i></a>
+                                        </div>
+                                        <div class="pq-icon-box-content">
+                                            <h4 class="pq-text-white">Phone Number</h4>
+                                            <p class="pq-text-white mb-0"> +91-9496138595 </p>
+                                            <p class="pq-text-white mb-0"> +91-9496138595 </p>
+                                            <p class="pq-text-white mb-0"> +91-9496138595 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 mt-4 mt-lg-0" style="padding-left: 30px; ">
+                    <div class="form-div">
+                        <div class="pq-section pq-style-1 text-left">
+                            
+                            <p style="font-size: x-large; font-family:Jost; color: #13181a;line-height: 30px;"><b>Please feel free to contact us at any time. Fill the form and we’ll get back to you as soon as we can!!!</b></p>
+                        </div>
+                        <form action="#" class="pq-contactform pq-applyform" novalidate>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 ">
+                                    <input type="text" id="first-name" class="name-field" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <input type="text" id="e-mail" class="e-mail-field" placeholder="Email" required>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <input type="text" id="phone-number" class="phone-number-field" placeholder=" Phone" required>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <input type="text" id="subject" class="subject-field" placeholder="Subject" required>
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea id="message" rows="5" cols="10" placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="col-lg-12" style="padding-left: 250px;">
+                                    <a class="pq-button form-btn" >
+                                        <div class="pq-button-block" >
+                                            <span class="pq-button-text">Send Message</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contacts & Forms End-->
+
+    <!--Map Start-->
+    <div class="map p-0" style="padding-top: 40px;">
+        <div class="pq-bg-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.0814823282035!2d75.20704571028254!3d12.10657423320388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba46c36156695bd%3A0xdd96bc6ea746f899!2sG-TEC%20COMPUTER%20EDUCATION!5e0!3m2!1sen!2sin!4v1699255137906!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          
+        </div>
+    </div>
+    <!--Map ENd-->
+
+{% endblock %}

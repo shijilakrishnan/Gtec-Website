@@ -1,0 +1,814 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-TEC Computer Education Payyanur</title>
+    <!--favicon icon-->
+    <link rel="shortcut icon" href="{% static 'images/gtec logo.png' %}">
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'rev/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rev/fonts/font-awesome/css/font-awesome.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rev/css/rs6.css' %}">
+    <!--owl carousel-->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <!--Progressbar CSS-->
+    <link rel="stylesheet" href="{% static 'css/progressbar.css' %}">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="{% static 'css/animations.min.css' %}">
+    <!--icon css -->
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/themify-icons/themify-icons.css' %}">
+    <!--style css-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?dummy=115">
+    <!--responsive css-->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}?dummy=194">
+    <style>
+        .enquiry-btn{
+            height: 50px;
+            right: -52px;
+            width: 150px;
+            padding-top: 6px;
+            top:45%;
+            background-color: #008bd0;
+            background-image: initial;
+            position:fixed;
+            background:#008bd0;
+            transform:rotate(270deg);
+            border-top-left-radius:10px;
+            border-top-right-radius: 10px;
+            cursor: pointer;
+        
+            color:white;
+            padding-left: 22px;
+        }
+  
+            /* Define your active link CSS class */
+            .active-link {
+                /* Define styles for active link */
+                font-weight: bold;
+                color: blue;
+            }
+     .active{
+        font-weight:600;
+        
+     }
+
+
+
+
+
+     .cssload-dots {
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        outline: 1px solid red;
+        filter: url(#goo);
+            -o-filter: url(#goo);
+            -ms-filter: url(#goo);
+            -webkit-filter: url(#goo);
+            -moz-filter: url(#goo);
+    }
+    
+    .cssload-dot {
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .cssload-dot:before {
+        content: "";
+        width: 34px;
+        height: 34px;
+        border-radius: 49px;
+        background: rgb(0,139,208);
+        position: absolute;
+        left: 50%;
+        transform: translateY(0);
+            -o-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+        margin-left: -17.5px;
+        margin-top: -17.5px;
+    }
+    
+    
+    
+    .cssload-dot:nth-child(5):before {
+        z-index: 100;
+        width: 44.5px;
+        height: 44.5px;
+        margin-left: -21.75px;
+        margin-top: -21.75px;
+        animation: cssload-dot-colors 4.6s ease infinite;
+            -o-animation: cssload-dot-colors 4.6s ease infinite;
+            -ms-animation: cssload-dot-colors 4.6s ease infinite;
+            -webkit-animation: cssload-dot-colors 4.6s ease infinite;
+            -moz-animation: cssload-dot-colors 4.6s ease infinite;
+    }
+    
+    
+    .cssload-dot:nth-child(1) {
+        animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+            -o-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+            -ms-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+            -webkit-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+            -moz-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+    }
+    .cssload-dot:nth-child(1):before {
+        background-color: rgb(255,50,112);
+        animation: cssload-dot-move 4.6s 0s ease infinite;
+            -o-animation: cssload-dot-move 4.6s 0s ease infinite;
+            -ms-animation: cssload-dot-move 4.6s 0s ease infinite;
+            -webkit-animation: cssload-dot-move 4.6s 0s ease infinite;
+            -moz-animation: cssload-dot-move 4.6s 0s ease infinite;
+    }
+    
+    .cssload-dot:nth-child(2) {
+        animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+            -o-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+            -ms-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+            -webkit-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+            -moz-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+    }
+    .cssload-dot:nth-child(2):before {
+        background-color: rgba(32,139,241,0.64);
+        animation: cssload-dot-move 4.6s 1.15s ease infinite;
+            -o-animation: cssload-dot-move 4.6s 1.15s ease infinite;
+            -ms-animation: cssload-dot-move 4.6s 1.15s ease infinite;
+            -webkit-animation: cssload-dot-move 4.6s 1.15s ease infinite;
+            -moz-animation: cssload-dot-move 4.6s 1.15s ease infinite;
+    }
+    
+    .cssload-dot:nth-child(3) {
+        animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+            -o-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+            -ms-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+            -webkit-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+            -moz-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+    }
+    .cssload-dot:nth-child(3):before {
+        background-color: rgb(175,225,2);
+        animation: cssload-dot-move 4.6s 2.3s ease infinite;
+            -o-animation: cssload-dot-move 4.6s 2.3s ease infinite;
+            -ms-animation: cssload-dot-move 4.6s 2.3s ease infinite;
+            -webkit-animation: cssload-dot-move 4.6s 2.3s ease infinite;
+            -moz-animation: cssload-dot-move 4.6s 2.3s ease infinite;
+    }
+    
+    .cssload-dot:nth-child(4) {
+        animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+            -o-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+            -ms-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+            -webkit-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+            -moz-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+    }
+    .cssload-dot:nth-child(4):before {
+        background-color: rgb(251,211,1);
+        animation: cssload-dot-move 4.6s 3.45s ease infinite;
+            -o-animation: cssload-dot-move 4.6s 3.45s ease infinite;
+            -ms-animation: cssload-dot-move 4.6s 3.45s ease infinite;
+            -webkit-animation: cssload-dot-move 4.6s 3.45s ease infinite;
+            -moz-animation: cssload-dot-move 4.6s 3.45s ease infinite;
+    }
+    
+    @keyframes cssload-dot-move {
+        0% {
+            transform: translateY(0);
+        }
+        18%, 22% {
+            transform: translateY(-68px);
+        }
+        40%, 100% {
+            transform: translateY(0);
+        }
+    }
+    
+    @-o-keyframes cssload-dot-move {
+        0% {
+            -o-transform: translateY(0);
+        }
+        18%, 22% {
+            -o-transform: translateY(-68px);
+        }
+        40%, 100% {
+            -o-transform: translateY(0);
+        }
+    }
+    
+    @-ms-keyframes cssload-dot-move {
+        0% {
+            -ms-transform: translateY(0);
+        }
+        18%, 22% {
+            -ms-transform: translateY(-68px);
+        }
+        40%, 100% {
+            -ms-transform: translateY(0);
+        }
+    }
+    
+    @-webkit-keyframes cssload-dot-move {
+        0% {
+            -webkit-transform: translateY(0);
+        }
+        18%, 22% {
+            -webkit-transform: translateY(-68px);
+        }
+        40%, 100% {
+            -webkit-transform: translateY(0);
+        }
+    }
+    
+    @-moz-keyframes cssload-dot-move {
+        0% {
+            -moz-transform: translateY(0);
+        }
+        18%, 22% {
+            -moz-transform: translateY(-68px);
+        }
+        40%, 100% {
+            -moz-transform: translateY(0);
+        }
+    }
+    
+    @keyframes cssload-dot-colors {
+        0% {
+            background-color: rgb(32,140,241);
+        }
+        25% {
+            background-color: rgb(255,50,112);
+        }
+        50% {
+            background-color: rgb(32,139,241);
+        }
+        75% {
+            background-color: rgb(175,225,2);
+        }
+        100% {
+            background-color: rgb(251,211,1);
+        }
+    }
+    
+    @-o-keyframes cssload-dot-colors {
+        0% {
+            background-color: rgb(32,140,241);
+        }
+        25% {
+            background-color: rgb(255,50,112);
+        }
+        50% {
+            background-color: rgb(32,139,241);
+        }
+        75% {
+            background-color: rgb(175,225,2);
+        }
+        100% {
+            background-color: rgb(251,211,1);
+        }
+    }
+    
+    @-ms-keyframes cssload-dot-colors {
+        0% {
+            background-color: rgb(32,140,241);
+        }
+        25% {
+            background-color: rgb(255,50,112);
+        }
+        50% {
+            background-color: rgb(32,139,241);
+        }
+        75% {
+            background-color: rgb(175,225,2);
+        }
+        100% {
+            background-color: rgb(251,211,1);
+        }
+    }
+    
+    @-webkit-keyframes cssload-dot-colors {
+        0% {
+            background-color: rgb(32,140,241);
+        }
+        25% {
+            background-color: rgb(255,50,112);
+        }
+        50% {
+            background-color: rgb(32,139,241);
+        }
+        75% {
+            background-color: rgb(175,225,2);
+        }
+        100% {
+            background-color: rgb(251,211,1);
+        }
+    }
+    
+    @-moz-keyframes cssload-dot-colors {
+        0% {
+            background-color: rgb(32,140,241);
+        }
+        25% {
+            background-color: rgb(255,50,112);
+        }
+        50% {
+            background-color: rgb(32,139,241);
+        }
+        75% {
+            background-color: rgb(175,225,2);
+        }
+        100% {
+            background-color: rgb(251,211,1);
+        }
+    }
+    
+    @keyframes cssload-dot-rotate-1 {
+        0% {
+            transform: rotate(-105deg);
+        }
+        100% {
+            transform: rotate(270deg);
+        }
+    }
+    
+    @-o-keyframes cssload-dot-rotate-1 {
+        0% {
+            -o-transform: rotate(-105deg);
+        }
+        100% {
+            -o-transform: rotate(270deg);
+        }
+    }
+    
+    @-ms-keyframes cssload-dot-rotate-1 {
+        0% {
+            -ms-transform: rotate(-105deg);
+        }
+        100% {
+            -ms-transform: rotate(270deg);
+        }
+    }
+    
+    @-webkit-keyframes cssload-dot-rotate-1 {
+        0% {
+            -webkit-transform: rotate(-105deg);
+        }
+        100% {
+            -webkit-transform: rotate(270deg);
+        }
+    }
+    
+    @-moz-keyframes cssload-dot-rotate-1 {
+        0% {
+            -moz-transform: rotate(-105deg);
+        }
+        100% {
+            -moz-transform: rotate(270deg);
+        }
+    }
+    
+    @keyframes cssload-dot-rotate-2 {
+        0% {
+            transform: rotate(165deg);
+        }
+        100% {
+            transform: rotate(540deg);
+        }
+    }
+    
+    @-o-keyframes cssload-dot-rotate-2 {
+        0% {
+            -o-transform: rotate(165deg);
+        }
+        100% {
+            -o-transform: rotate(540deg);
+        }
+    }
+    
+    @-ms-keyframes cssload-dot-rotate-2 {
+        0% {
+            -ms-transform: rotate(165deg);
+        }
+        100% {
+            -ms-transform: rotate(540deg);
+        }
+    }
+    
+    @-webkit-keyframes cssload-dot-rotate-2 {
+        0% {
+            -webkit-transform: rotate(165deg);
+        }
+        100% {
+            -webkit-transform: rotate(540deg);
+        }
+    }
+    
+    @-moz-keyframes cssload-dot-rotate-2 {
+        0% {
+            -moz-transform: rotate(165deg);
+        }
+        100% {
+            -moz-transform: rotate(540deg);
+        }
+    }
+    
+    @keyframes cssload-dot-rotate-3 {
+        0% {
+            transform: rotate(435deg);
+        }
+        100% {
+            transform: rotate(810deg);
+        }
+    }
+    
+    @-o-keyframes cssload-dot-rotate-3 {
+        0% {
+            -o-transform: rotate(435deg);
+        }
+        100% {
+            -o-transform: rotate(810deg);
+        }
+    }
+    
+    @-ms-keyframes cssload-dot-rotate-3 {
+        0% {
+            -ms-transform: rotate(435deg);
+        }
+        100% {
+            -ms-transform: rotate(810deg);
+        }
+    }
+    
+    @-webkit-keyframes cssload-dot-rotate-3 {
+        0% {
+            -webkit-transform: rotate(435deg);
+        }
+        100% {
+            -webkit-transform: rotate(810deg);
+        }
+    }
+    
+    @-moz-keyframes cssload-dot-rotate-3 {
+        0% {
+            -moz-transform: rotate(435deg);
+        }
+        100% {
+            -moz-transform: rotate(810deg);
+        }
+    }
+    
+    @keyframes cssload-dot-rotate-4 {
+        0% {
+            transform: rotate(705deg);
+        }
+        100% {
+            transform: rotate(1080deg);
+        }
+    }
+    
+    @-o-keyframes cssload-dot-rotate-4 {
+        0% {
+            -o-transform: rotate(705deg);
+        }
+        100% {
+            -o-transform: rotate(1080deg);
+        }
+    }
+    
+    @-ms-keyframes cssload-dot-rotate-4 {
+        0% {
+            -ms-transform: rotate(705deg);
+        }
+        100% {
+            -ms-transform: rotate(1080deg);
+        }
+    }
+    
+    @-webkit-keyframes cssload-dot-rotate-4 {
+        0% {
+            -webkit-transform: rotate(705deg);
+        }
+        100% {
+            -webkit-transform: rotate(1080deg);
+        }
+    }
+    
+    @-moz-keyframes cssload-dot-rotate-4 {
+        0% {
+            -moz-transform: rotate(705deg);
+        }
+        100% {
+            -moz-transform: rotate(1080deg);
+        }
+    }
+    </style>
+   
+</head>
+<body>
+    <!-- Loading Start-->
+    <div id="pq-loading">
+    <div class="cssload-dots">
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+    </div>
+    
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" ></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7" result="goo" ></feColorMatrix>
+                <!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>-->
+            </filter>
+        </defs>
+    </svg>
+</div>
+      
+    <!--Header Start-->
+    <header id="pq-header" class="pq-header-default">
+        <div class="pq-top-header">
+            <div class="container">
+                <div class="row flex-row-reverse">
+                    <div class="col-md-6 text-right">
+                        <div class="pq-header-social text-right">
+                            <ul>
+                                <li><a href="https://www.facebook.com/gtecpayyanur/"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.youtube.com/results?search_query=gtec+payyanur"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="https://www.instagram.com/gtecpayyannur/"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="pq-header-contact ">
+                            <ul>
+                                <li>
+                                    <a href="tel:+949 613 8595"><i class="fas fa-phone-flip"></i><span>+949 613 8595</span></a>
+                                </li>
+                                <li>
+                                    <a href="mailto:payyanur.knr@gteceducation.com"><i class="fas fa-envelope"></i><span>payyanur.knr@gteceducation.com</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pq-bottom-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="home-modern.html">
+                                <img class="img-fluid logo" src="{% static 'images/gtec logo.png' %}" alt="techtrix">
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div id="pq-menu-contain" class="pq-menu-contain">
+                                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                        <li class="menu-item"> 
+                                            <a href="/" class="menu-item current-menu-item manu-item-has-children {% if request.resolver_match.url_name == 'index' %}active{% endif %}">Home</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="/about-us" class="menu-item current-menu-item manu-item-has-children {% if request.resolver_match.url_name == 'about-us' %}active{% endif %}">About Us</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="/courses" class="menu-item current-menu-item manu-item-has-children {% if request.resolver_match.url_name == 'courses' %}active{% endif %}">Courses</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item">
+                                                    <a href="/accounting">Accounting</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="/software">Software</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="/multimedia">Multimedia & Animation</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="/cadd">CADD</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="/msoffice">MS Office</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="/hardware">Hardware</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="/placement" class="menu-item current-menu-item manu-item-has-children {% if request.resolver_match.url_name == 'placement' %}active{% endif %}">Placements</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="/affiliations" class="menu-item current-menu-item manu-item-has-children {% if request.resolver_match.url_name == 'affiliations' %}active{% endif %}">Affiliations & Awards</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="/contact-us" class="menu-item current-menu-item manu-item-has-children {% if request.resolver_match.url_name == 'contact-us' %}active{% endif %}">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                          
+                            <a href="{% url 'resume' %}" class="pq-button" style="margin-left:20px;">
+                                <div class="pq-button-block">
+    
+                                    <span class="pq-button-text">Resume Building</span>
+                                </div>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        </nav>
+                    </div>
+                </div>
+                <div class="enquiry-btn">
+                    <a data-toggle="modal" data-target="#enquiry" href="{% url 'enquiry' %}" style="color:white;">Quick Enquiry</a>
+                <div>
+            </div>
+        </div>
+    </header>
+
+{% block content %}
+
+{% endblock %}
+    <!--Footer Start-->
+    <footer id="pq-footer" class="style-1">
+        <div class="pq-footer-style-1">
+            <div class="pq-footer-top">
+                <!-- footer top list  -->
+                <div class="pq-footer-bottom-list">
+                    <div class="container">
+                        <div class="row g-0">
+                            <div class="col-lg-4 p-0">
+                                <div class="pq-footer-items">
+                                    <i class="ti-location-pin"></i>
+                                    <div class="pq-footer-items-info">
+                                        <h4>Address</h4>
+                                        <span>3rd floor , M.M. Centre, Main Rd, Payyanur, Kerala 670307</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 p-0">
+                                <div class="pq-footer-items">
+                                    <i class="ti-mobile"></i>
+                                    <div class="pq-footer-items-info">
+                                        <h4>call Us On</h4>
+                                        <a href="tel:+180045647824">
+                                            <span>+ 094961 38595</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 p-0">
+                                <div class="pq-footer-items border-0">
+                                    <i class="ti-email"></i>
+                                    <div class="pq-footer-items-info">
+                                        <h4>Email Us</h4>
+                                        <a href="mailto:payyanur.knr@gteceducation.com"><span>payyanur.knr@gteceducation.com</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer top list -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6">
+                            <div class="widget">
+                                <h1 style="color: #65c2f0; padding-bottom: 20px;">G-TEC</h1>
+                                
+                                <p>G-TEC EDUCATION is an ISO-certified education organization providing a variety of services including ICT, Academic programs, ITeS, Corporate trainings, Skills and Vocational Trainings, as well as Government projects through quality learning.</p>
+                                <div class="pq-footer-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/gtecpayyanur/"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.youtube.com/results?search_query=gtec+payyanur"><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href="https://www.instagram.com/gtecpayyannur/"><i class="fab fa-instagram"></i></a></li>
+                                 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3  col-md-6">
+                            <div class="widget">
+                                <h4 class="footer-title">Our Courses</h4>
+                                <div class="menu-useful-service-links-container">
+                                    <ul id="menu-useful-service-links" class="menu">
+                                        <li>
+                                            <a href="/accounting">Accounting</a>
+                                        </li>
+                                        <li>
+                                            <a href="/software">Software Development</a>
+                                        </li>
+                                        <li>
+                                            <a href="/multimedia">Multimedia & Animation</a>
+                                        </li>
+                                        <li>
+                                            <a href="/cadd">CADD & Interior Designing</a>
+                                        </li>
+                                        <li>
+                                            <a href="/hardware">Hardware</a>
+                                        </li>
+                                        <li>
+                                            <a href="/msoffice">MS Office</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3  col-md-6" >
+                            <div class="widget">
+                                <h4 class="footer-title">Useful link</h4>
+                                <div class="menu-useful-link-container">
+                                    <ul id="menu-usefull-link" class="menu">
+                                        <li>
+                                            <a href="#">Fact Search Engine</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Learn and Code</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Video Sharing Website</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">File &amp; URL Scanner</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Online Software Package</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3  col-md-6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.0892999812286!2d75.2066134750621!3d12.1060389381354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba46c36156695bd%3A0xdd96bc6ea746f899!2sG-TEC%20COMPUTER%20EDUCATION!5e0!3m2!1sen!2sin!4v1699083205759!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="pq-copyright-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <span class="pq-copyright"><a target="_blank" href="#"> Copyright 2023 G-TEC All Rights
+                                    Reserved.</a></span>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer End-->
+
+    <!--Back to top Start-->
+    <div id="back-to-top">
+        <a class="top" id="#top" href="#"> <i class="ion-ios-arrow-up"></i> </a>
+    </div>
+    <!--Back to top End-->
+
+    <!--Jquery js-->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!--Bootstrap js-->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!--Owl Carousel js-->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <!--Progressbar js-->
+    <script src="{% static 'js/progressbar.js' %}"></script>
+    <!--Isotope js-->
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <!--Counter js -->
+    <script src="{% static 'js/jquery.countTo.min.js' %}"></script>
+    <!--Magnefic Popup js -->
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <!--Animation JS -->
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <!--Rev Slider js-->
+    <script src="{% static 'rev/js/rbtools.min.js' %}"></script>
+    <script src="{% static 'rev/js/rs6.min.js' %}"></script>
+    <script src="{% static 'js/rev-custom.js' %}"></script>
+    <!--Custom js-->
+    <script src="{% static 'js/rough-script.js' %}"></script>
+    <script src="{% static 'js/rough-notation.iife.js' %}"></script>
+    <script src="{% static 'js/rough-custom.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+</body>
+</html>

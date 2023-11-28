@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<style>
+    .tagcloud {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tagcloud div {
+        background-color: #1397da;
+        color: #fff;
+        border: 3px solid #1397da;
+        border-radius: 5px;
+        width: 20%;
+        margin-bottom: 10px;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .tagcloud div {
+            width: 45%; /* Adjust width for smaller screens */
+            margin: 5px; /* Adjust margins for smaller screens */
+        }
+    }
+</style>
+    <!--Breadcrumb Start-->
+    <div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav aria-label="breadcrumb">
+                        <div class="pq-breadcrumb-title">
+                            <h1 style="text-align: center;color:#008db0;">Software</h1>
+                        </div>
+                       
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Breadcrumb End-->
+
+    <!--Left Sidebar Start-->
+    <section class="left-sidebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="pq-blog pq-blog-col-1">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="pq-blog-post">
+                                    <div class="pq-post-media">
+                                        <img loading="lazy" src="{% static 'images/sftwr.jpg' %}" alt="blog-img">
+                                    </div>
+                                    <div class="pq-blog-contain">
+                                        
+                                        <h5 class="pq-blog-title"><a href="app-promotes-sales-profits-in-it-solutions.html">Software</a></h5>
+                                        <p>Courses with duration ranging from 1 months to 2 years have been the prime evidence to the flexibility of G-TEC Software Academy. Beginning from basic computing to the .NET , Python, etc.</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                                 
+                        
+                        <div id="categories-2" class="widget widget_categories">
+                            <h2 class="widget-title">Courses We Offer</h2>
+                            <ul>
+                                <li>
+                                    <a href="software/fullstack">Full Stack Developer</a>
+                                </li>
+                                <li>
+                                    <a href="software/pgdca">Post Graduate Diploma in Computer Application(PGDCA)</a>
+                                </li>
+                                <li>
+                                    <a href="software/mdad">Master Diploma in Artifical Intelligence & Data Science</a>
+                                </li>
+                                <li>
+                                    <a href="software/dda">Diploma in Data Analytics(DDA)</a>
+                                </li>
+                                <li>
+                                    <a href="software/ui/ux">Diploma in UI/UX Designing</a>
+                                </li>
+                                <li>
+                                    <a href="software/mse">Master in Software Engineering(MSE)</a>
+                                </li>
+                                <li>
+                                    <a href="software/geep">Graduate Employability Enhancement Program(GEEP)</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                <h2 style="text-align: center;">CERTIFICATE COURSES</h2> <br>
+                <div class="tagcloud">
+                    <div>Full Stack Developer</div>
+                    <div>Python/Django</div>
+                    <div>Programming in C</div>
+                    
+                    <div>Programming in C++</div>
+                    <div>Basics of Python</div>
+                    <div>MySQL</div>
+                    
+                    <div>Java</div>
+                    <div>PHP</div>
+                    <div>.NET</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                <h2 style="text-align: center;">DIPLOMA COURSES</h2> <br>
+                <div class="tagcloud">
+                    <div>Post Graduate Diploma in Computer Application(PGDCA)</div>
+                    <div>Master Diploma in Artifical Intelligence & Data Science</div>
+                    <div>Diploma in Data Analytics(DDA)</div>
+                    
+                    <div>Diploma in UI/UX Designing</div>
+                    <div>Diploma in Web Designing(DWD)</div>
+                    <div>Advanced Diploma in Data Analysis(ADDA)</div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                <h2 style="text-align: center;">POST GRADUATION COURSES</h2> <br>
+                <div class="tagcloud">
+                    <div>Post Graduate Diploma in Computer Application(PGDCA)</div>
+                    <div>Master Diploma in Artifical Intelligence & Data Science</div>
+                    <div>Graduate Employability Enhancement Program(GEEP)</div>
+                  
+                    
+                </div>
+            </div>
+        </div>
+       
+          
+    </section>
+    <!--Left Sidebar End-->
+{% endblock %}

@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!--Blog-Single Start-->
+    <h2 style="color:#008db0;text-align:center;">Graduate Employability Enhancement Program - GEEP</h2>
+    <section class="blog-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="pq-blog-post">
+                        <div class="pq-post-media">
+                            <img src="{% static 'images/g1.jpg' %}" width="90%" alt="blog-img">
+                        </div>
+                        <div class="pq-blog-contain">
+                            
+                            <p>To help graduate understand and develop the necessary skills in latest Technologies.This course includes Live Projects which makes the student confident in his/her career path. And also 
+                                includes latest trends,which is widely used in IT industry.
+                            </p>
+                           
+                            <div class="pq-blog-single-info">
+                                <h2 class="pq-blog-single-title"  style="color:#008db0">Front-End Developer</h2>
+                                <ul>
+                                    <li style="color:black;">HTML,CSS,Javascript</li>
+                                    <li style="color:black;">JQuery and JSON</li>
+                                    <li style="color:black;">Adobe Dreamweaver</li>
+                                    
+                                </ul>
+                                <h2  class="pq-blog-single-title"  style="color:#008db0">Back-End Development</h2>
+                                <ul>
+                                    <li style="color:black;">SQL Server</li>
+                                    <li style="color:black;">Kotlin & Android</li>
+                                    <li style="color:black;">or Python & Django</li>
+                                    <li style="color:black;">or C# & ASP.NET</li>
+                                    <li style="color:black;">or Java</li>
+                                    <li style="color:black;">or PHP</li>
+                                    
+                                </ul>   
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="comments" class="pq-comment-area">
+                    
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div id="secondary" class="sidebar widget-area">
+                       
+                        <div id="categories-2" class="widget widget_categories">
+                            <h2 class="widget-title">Career Opportunities</h2>
+                            <ul>
+                                <li>
+                                    IT Educator
+                                </li>
+                                <li>
+                                    Web Designer
+                                </li>
+                                <li>
+                                    Software Programmer
+                                </li>
+                                <li>
+                                    Graphic Designer
+                                </li>
+                               
+                            </ul>
+                        </div>
+                        <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                            <h2 class="widget-title">Technical Skills</h2>
+                            <ul>
+                                <li>HTML,CSS,and Javascript,JQuery,JSON</li>
+                                <li>SQL</li>
+                                <li>Android/Python/C#&ASP.Net/Java/PHP</li>
+                                
+                            </ul>
+                        </div>
+                        <div id="meta-2" class="widget widget_meta">
+                            <img src="{% static 'images/full-stack.png' %}">
+                        </div>
+                        <div id="meta-2" class="widget widget_meta">
+                            <h2 class="widget-title">Using Languages</h2>
+                            <ul style="list-style-type:square">
+                                <li>PHP and MySQL</li>
+                                <li>ASP.Net and C#.NET</li>
+                                <li>Python and Django</li>
+                                <li>Java</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Blog-Single End-->
+{% endblock %}

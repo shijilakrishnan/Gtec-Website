@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!--Blog-Single Start-->
+    <h2 style="color:#008db0;text-align:center;">Full Stack Development</h2>
+    <section class="blog-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="pq-blog-post">
+                        <div class="pq-post-media">
+                            <img src="{% static 'images/full1.jpg' %}" alt="blog-img">
+                        </div>
+                        <div class="pq-blog-contain">
+                            
+                            <p>A Full-Stack Developer is someone who is able to work on both the front-end and back-end portions of a website or an application. Front-end generally refers to the portion of a website/application the user will see or interact with, and the back-end is the part of the application that handles the logic,database,interactions,user authentication,server configuration etc.</p>
+                           
+                            <h2 class="pq-blog-single-title" style="color:#008db0">Front-End Development</h2>
+                            <p  style="color:black">Adobe XD,Adobe Photoshop,Dreamweaver/Sublime Text,Word Press</p>
+                            <div class="pq-blog-single-info">
+                                <h2 class="pq-blog-single-title"  style="color:#008db0">User Interface(UI) Designing</h2>
+                                <ul>
+                                    <li style="color:black;">Understanding Tools & Menus</li>
+                                    <li style="color:black;">Color Concepts</li>
+                                    <li style="color:black;">Introduction to UI design</li>
+                                    <li style="color:black;">Basic Layout Design</li>
+                                    <li style="color:black;">Layout Analysis</li>
+                                    <li style="color:black;">Real-time designing of a Professional Website</li>
+                                </ul>
+                                <h2  class="pq-blog-single-title"  style="color:#008db0">Back-End Development</h2>
+                                <ul>
+                                    <li style="color:black;">Classes & Objects, Handling with Files</li>
+                                    <li style="color:black;">Authentication & Authorization</li>
+                                    <li style="color:black;">Stage-managment,Validations</li>
+                                    <li style="color:black;">Web Development, Web Services & Deployment</li>
+                                    <li style="color:black;">Content Managment System Implementation</li>
+                                    <li style="color:black;">E-commerce website development</li>
+                                    <li style="color:black;">Databases Design & Managment</li>
+                                    <li style="color:black;">Working with Github</li>
+                                </ul>   
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="comments" class="pq-comment-area">
+                    
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div id="secondary" class="sidebar widget-area">
+                       
+                        <div id="categories-2" class="widget widget_categories">
+                            <h2 class="widget-title">Career Opportunities</h2>
+                            <ul>
+                                <li>
+                                    Full Stack Web Developer
+                                </li>
+                                <li>
+                                    Front-End Developer
+                                </li>
+                                <li>
+                                    Back-End Developer
+                                </li>
+                                <li>
+                                    UI Designer
+                                </li>
+                               
+                            </ul>
+                        </div>
+                        <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                            <h2 class="widget-title">Technical Skills</h2>
+                            <ul>
+                                <li>HTML,CSS,and Javascript(it is pretty much mandatory!)</li>
+                                <li>Programming languages(back-end)</li>
+                                <li>Databases</li>
+                                <li>Version Control</li>
+                                <li>Deployment and hosting</li>
+                                <li>Third-party APIs/services</li>
+                            </ul>
+                        </div>
+                        <div id="meta-2" class="widget widget_meta">
+                            <img src="{% static 'images/full-stack.png' %}">
+                        </div>
+                        <div id="meta-2" class="widget widget_meta">
+                            <h2 class="widget-title">Using Languages</h2>
+                            <ul style="list-style-type:square">
+                                <li>PHP with MySQL,Codelgniter/Laravel</li>
+                                <li>ASP.Net with C#.NET,SQL Server</li>
+                                <li>Python with Django,MySQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Blog-Single End-->
+{% endblock %}

@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!--Blog-Single Start-->
+    <h2 style="color:#008db0;text-align:center;">Diploma In Building Design And Animation </h2>
+    <section class="blog-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="pq-blog-post">
+                        <div class="pq-post-media">
+                            <img src="{% static 'images/cons.jpg' %}" width="90%" alt="blog-img">
+                        </div>
+                        <div class="pq-blog-contain">
+                            
+                            <p>A spectacular designing & animation course embedded in building design.Enthralling beautiful buildings simply animated through soft touch fingers.</p>
+                           
+                            {% comment %} <h2 class="pq-blog-single-title" style="color:#008db0">Front-End Development</h2> {% endcomment %}
+                            {% comment %} <p  style="color:black">Adobe Photoshop,Adobe Dreamweaver,HTML,CSS,Javascript, JSON and Jquery</p> {% endcomment %}
+                            <div class="pq-blog-single-info">
+                               
+                                <h2  class="pq-blog-single-title"  style="color:#008db0">Building Design</h2>
+                                <ul>
+                                    <li style="color:black;">AutoCAD 2D & 3D</li>
+                                    <li style="color:black;">Photoshop</li>
+                
+                                    <li style="color:black;">3Ds Max</li>
+                                    <li style="color:black;">V-Ray</li>
+                                    <li style="color:black;">SketchUp</li>
+                                    
+                                </ul>   
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="comments" class="pq-comment-area">
+                    
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div id="secondary" class="sidebar widget-area">
+                       
+                        <div id="categories-2" class="widget widget_categories">
+                            <h2 class="widget-title">Career Opportunities</h2>
+                            <ul>
+                                <li>
+                                    2D Draughtsman - Building designer
+                                </li>
+                                <li>
+                                    3D Visualizer - Interior designer
+                                </li>
+                                <li>
+                                    Project architect - Architectural Drafter
+                                </li>
+                                <li>
+                                    Architectural visualizer
+                                </li>
+                               
+                            </ul>
+                        </div>
+                        <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                            <h2 class="widget-title">Technical Skills</h2>
+                            <ul>
+    
+                                <li>2D Drafting - 3D modeling</li>
+                                <li>3D Interior and Exterior modeling</li>
+                                <li>video editing - walkthrough creation</li>
+                                
+                                
+                                
+                            </ul>
+                        </div>
+                        <div id="meta-2" class="widget widget_meta">
+                            <img src="{% static 'images/architecture-building-construction-design-wallpaper-preview.jpg' %}">
+                        </div>
+                        {% comment %} <div id="meta-2" class="widget widget_meta">
+                            <h2 class="widget-title">Using Languages</h2>
+                            <ul style="list-style-type:square">
+                                
+                                <li>Python</li>
+                                
+                            </ul>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Blog-Single End-->
+{% endblock %}

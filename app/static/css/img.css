@@ -1,0 +1,56 @@
+.placement {
+    overflow: hidden;
+}
+
+.placement h2 {
+    color: #00283c;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+    padding: 65px 0px;
+}
+
+.placement h2 span {
+    font-weight: 400;
+}
+
+.placement .place_blk {
+    background: url(../images/placement_bg.jpg) repeat center top;
+    background-size: cover;
+}
+
+.placement .stud_blk {
+    width: 32%;
+    float: left;
+    padding: 90px 60px 65px 0px;
+    padding-right: 60px;
+}
+
+.placement .stud_blk .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.placement .stud_blk .col3 {
+    width: 33.333333%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.placement .stud_blk .student {
+    width: 100%;
+}
+
+.placement .stud_blk .student img {
+    border: solid 3px #008bd0;
+}
+
+.placement .stud_blk h5 {
+    font-size: 14px;
+    text-align: center;
+    color: #FFF;
+    margin-top: 15px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}

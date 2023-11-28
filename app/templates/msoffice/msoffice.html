@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .tagcloud {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tagcloud div {
+        background-color: #1397da;
+        color: #fff;
+        border: 3px solid #1397da;
+        border-radius: 5px;
+        width: 20%;
+        margin-bottom: 10px;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .tagcloud div {
+            width: 45%; /* Adjust width for smaller screens */
+            margin: 5px; /* Adjust margins for smaller screens */
+        }
+    }
+</style>
+    <!--Breadcrumb Start-->
+    <div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav aria-label="breadcrumb">
+                        <div class="pq-breadcrumb-title">
+                            <h1 style="text-align: center;color:#008db0;">MS Office</h1>
+                        </div>
+                       
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Breadcrumb End-->
+
+    <!--Left Sidebar Start-->
+    <section class="left-sidebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="pq-blog pq-blog-col-1">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="pq-blog-post">
+                                    <div class="pq-post-media">
+                                        <img loading="lazy" src="{% static 'images/ms1.png' %}" alt="blog-img">
+                                    </div>
+                                    <div class="pq-blog-contain">
+                                        
+                                        <h5 class="pq-blog-title"><a href="app-promotes-sales-profits-in-it-solutions.html">MS Office</a></h5>
+                                        <p>Explore the Microsoft Office applications suite. G-tec covers a wide range of software titles including Excel, Publisher, OneNote, Outlook, SharePoint, Word, Access, and PowerPoint.</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div id="secondary" class="sidebar widget-area">
+                        
+                        
+                        <div id="categories-2" class="widget widget_categories">
+                            <h2 class="widget-title">Courses We Offer</h2>
+                            <ul>
+                                <li>
+                                    <a href="msoffice/ao">Advanced Operator</a>
+                                </li>
+                                <li>
+                                    <a href="msoffice/go">G-Operator</a>
+                                </li>
+                                <li>
+                                    <a href="msoffice/adv">Advanced Excel</a>
+                                </li>
+                                <li>
+                                    <a href="#">Typing(English,Malayalam,Arabic)</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        <div id="meta-2" class="widget widget_meta">
+                            <img src="{% static 'images/msoffc.jpg' %}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                <h2  style="text-align: center;">CERTIFICATE COURSES</h2>  <br>     
+                <div class="tagcloud">
+                    
+                    <div>Advanced Operator</div>
+                    <div>G-Operator</div>
+                   
+                   
+                    
+                    <div>Advanced Excel</div>
+                    <div>Typing(English,Malayalam,Arabic)</div>
+                                        </div>
+                </div>
+            </div>
+        </div>
+    
+        <div>
+            <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                <h2  style="text-align: center;">MICROSOFT OFFICE SPECIALIST CERTIFICATION</h2>  <br>     
+                <div class="tagcloud">
+                    
+                    <div>Advanced Operator</div>
+                    <div>Advanced Excel</div>
+                    
+                    </div>
+                    
+                    
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--Left Sidebar End-->
+{% endblock %}

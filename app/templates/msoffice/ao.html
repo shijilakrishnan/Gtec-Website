@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!--Blog-Single Start-->
+    <h2 style="color:#008db0;text-align:center;">Advanced Operator - AO</h2>
+    <section class="blog-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="pq-blog-post">
+                        <div class="pq-post-media">
+                            <img src="{% static 'images/msoffc.jpg' %}" alt="blog-img">
+                        </div>
+                        <div class="pq-blog-contain">
+                            
+                            <p>This course is designed for those students who wish to learn numerous advance MS Word,Excel,Powerpoint,Access and Outlook features.
+                                By the end of this training, the students will be able to use advance features of Word,Excel,Powerpoint and Outlook in an office environment with maximum efficiency as well as the most important office applications which are extremely useful in secretarial routine and office administrative work.
+                            </p>
+                           
+                            
+                        </div>
+                    </div>
+
+                    <div id="comments" class="pq-comment-area">
+                    
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div id="secondary" class="sidebar widget-area">
+                       
+                        <div id="categories-2" class="widget widget_categories">
+                            <h2 class="widget-title">Career Opportunities</h2>
+                            <ul>
+                                <li>
+                                   IT Educator
+                                </li>
+                                <li>Office Assistant</li>
+                                <li>Office Secretary</li>
+                                <li>Data Entry Operator</li>
+                                <li>Document Specialist</li>
+                                <li>DTP Operator</li>
+                            </ul>
+                        </div>
+                        <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                            <h2 class="widget-title">Technical Skills</h2>
+                            <ul>
+                                <li>MS Word</li>
+                                <li>MS Excel</li>
+                                <li>Powerpoint</li>
+                              
+                            </ul>
+                        </div>
+                        {% comment %} <div id="meta-2" class="widget widget_meta">
+                            <img src="{% static 'images/msoffc.jpg' %}">
+                        </div>
+                         {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Blog-Single End-->
+{% endblock %}

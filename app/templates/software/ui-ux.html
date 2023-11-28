@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!--Blog-Single Start-->
+    <h2 style="color:#008db0;text-align:center;">Diploma In UI/UX Designing</h2>
+    <section class="blog-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="pq-blog-post">
+                        <div class="pq-post-media">
+                            <img src="{% static 'images/ui.png' %}" width="90%" alt="blog-img">
+                        </div>
+                        <div class="pq-blog-contain">
+                            
+                            <p>The goal of this course is to practically train on all aspect user interface and user experience.User experience(UX) design is the process design teams use to create products that provide meaningful and relevant experiences to users.
+                                This course helps to learn current best practices and conventions for websites or apps.
+                            </p>
+                           
+                            {% comment %} <h2 class="pq-blog-single-title" style="color:#008db0">Front-End Development</h2> {% endcomment %}
+                            {% comment %} <p  style="color:black">Adobe Photoshop,Adobe Dreamweaver,HTML,CSS,Javascript, JSON and Jquery</p> {% endcomment %}
+                            <div class="pq-blog-single-info">
+                               
+                                <h2  class="pq-blog-single-title"  style="color:#008db0">Development</h2>
+                                <ul>
+                                    <li style="color:black;">UI/UX Design Modules</li>
+                                    <li style="color:black;">Adobe XD</li>
+                
+                                    <li style="color:black;">Figma</li>
+                                                                      
+                                    
+                                </ul>   
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="comments" class="pq-comment-area">
+                    
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div id="secondary" class="sidebar widget-area">
+                       
+                        <div id="categories-2" class="widget widget_categories">
+                            <h2 class="widget-title">Career Opportunities</h2>
+                            <ul>
+                                <li>
+                                   UI/UX Designer
+                                </li>
+                                
+                               
+                            </ul>
+                        </div>
+                        <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                            <h2 class="widget-title">Technical Skills</h2>
+                            <ul>
+    
+                                <li>Adobe XD</li>
+                                <li>Figma</li>
+                                <li>UX User Testing</li>
+                               
+                            </ul>
+                        </div>
+                        <div id="meta-2" class="widget widget_meta">
+                            <img src="{% static 'images/ux.jpg' %}">
+                        </div>
+                        {% comment %} <div id="meta-2" class="widget widget_meta">
+                            <h2 class="widget-title">Using Languages</h2>
+                            <ul style="list-style-type:square">
+                                
+                                <li>Python</li>
+                                
+                            </ul>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Blog-Single End-->
+{% endblock %}

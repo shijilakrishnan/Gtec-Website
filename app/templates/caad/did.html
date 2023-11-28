@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!--Blog-Single Start-->
+    <h2 style="color:#008db0;text-align:center;">Diploma In Interior Designing</h2>
+    <section class="blog-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="pq-blog-post">
+                        <div class="pq-post-media">
+                            <img src="{% static 'images/did.jpg' %}" width="90%" alt="blog-img">
+                        </div>
+                        <div class="pq-blog-contain">
+                            
+                            <p>A specular design and animation course embedded in building designs.Enthraling beautiful Interior design professionals who design interior spaces.we train professionals to be able to help,support and cope up with growing chanllenges and not to rely on foreign consultants.</p>
+                           
+                            {% comment %} <h2 class="pq-blog-single-title" style="color:#008db0">Front-End Development</h2> {% endcomment %}
+                            {% comment %} <p  style="color:black">Adobe Photoshop,Adobe Dreamweaver,HTML,CSS,Javascript, JSON and Jquery</p> {% endcomment %}
+                            <div class="pq-blog-single-info">
+                               
+                                <h2  class="pq-blog-single-title"  style="color:#008db0">Building Design</h2>
+                                <ul>
+                                    <li style="color:black;">Fundamentals of Interior Designing</li>
+                                    <li style="color:black;">Services</li>
+                
+                                    <li style="color:black;">Manual Drawing</li>
+                                    <li style="color:black;">Building plan and elevation in AutoCAD</li>
+                                    <li style="color:black;">Creating Building models in 3Ds Max</li>
+                                    
+                                </ul>   
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="comments" class="pq-comment-area">
+                    
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div id="secondary" class="sidebar widget-area">
+                       
+                        <div id="categories-2" class="widget widget_categories">
+                            <h2 class="widget-title">Career Opportunities</h2>
+                            <ul>
+                                <li>
+                                    Interior designers in: Interor designing firms - construction companies ... 
+                                </li>
+                                <li>
+                                    Self Employement
+                                </li>
+                                
+                               
+                            </ul>
+                        </div>
+                        <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                            <h2 class="widget-title">Technical Skills</h2>
+                            <ul>
+    
+                                <li>Interior Designing - Interior lighting</li>
+                                <li>2D building drawing - Services like electricity,plumping and sewerage</li>
+                                <li>Digital 3D modeling - perspective drawing</li>
+                                
+                                
+                                
+                            </ul>
+                        </div>
+                        <div id="meta-2" class="widget widget_meta">
+                            <img src="{% static 'images/architecture-building-construction-design-wallpaper-preview.jpg' %}">
+                        </div>
+                        {% comment %} <div id="meta-2" class="widget widget_meta">
+                            <h2 class="widget-title">Using Languages</h2>
+                            <ul style="list-style-type:square">
+                                
+                                <li>Python</li>
+                                
+                            </ul>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Blog-Single End-->
+{% endblock %}

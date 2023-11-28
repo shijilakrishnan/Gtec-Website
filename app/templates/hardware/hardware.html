@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .tagcloud {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tagcloud div {
+        background-color: #1397da;
+        color: #fff;
+        border: 3px solid #1397da;
+        border-radius: 5px;
+        width: 20%;
+        margin-bottom: 10px;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .tagcloud div {
+            width: 45%; /* Adjust width for smaller screens */
+            margin: 5px; /* Adjust margins for smaller screens */
+        }
+    }
+</style>
+    <!--Breadcrumb Start-->
+    <div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav aria-label="breadcrumb">
+                        <div class="pq-breadcrumb-title">
+                            <h1 style="text-align: center;color:#008db0;">Hardware</h1>
+                        </div>
+                       
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Breadcrumb End-->
+
+    <!--Left Sidebar Start-->
+    <section class="left-sidebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="pq-blog pq-blog-col-1">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="pq-blog-post">
+                                    <div class="pq-post-media">
+                                        <img loading="lazy" src="{% static 'images/hw.jpg' %}" alt="blog-img">
+                                    </div>
+                                    <div class="pq-blog-contain">
+                                        
+                                        <h5 class="pq-blog-title"><a href="app-promotes-sales-profits-in-it-solutions.html">Hardware</a></h5>
+                                        <p>Students will learn to build computers, troubleshoot hardware and software problems, networking, safety in the workplace, and basic electronics related to computer hardware.</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div id="secondary" class="sidebar widget-area">
+                        
+                        
+                        <div id="categories-2" class="widget widget_categories">
+                            <h2 class="widget-title">Courses We Offer</h2>
+                            <ul>
+                                <li>
+                                    <a href="hardware/dcss">Diploma In CCTV And Security System (DCSS)</a>
+                                </li>
+                               
+                                
+                            </ul>
+                        </div>
+                        <div id="meta-2" class="widget widget_meta">
+                            <img src="{% static 'images/hr.jpg' %}">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                <h2  style="text-align: center;">DIPLOMA COURSES</h2>  <br>     
+                <div class="tagcloud">
+                   
+                    <div>Diploma In CCTV And Security System (DCSS)</div>
+                                       </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Left Sidebar End-->
+{% endblock %}

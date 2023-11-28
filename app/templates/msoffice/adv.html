@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!--Blog-Single Start-->
+    <h2 style="color:#008db0;text-align:center;">Advanced Excel</h2>
+    <section class="blog-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="pq-blog-post">
+                        <div class="pq-post-media">
+                            <img src="{% static 'images/msoffc.jpg' %}" alt="blog-img">
+                        </div>
+                        <div class="pq-blog-contain">
+                            
+                            <p>It increases productivity,improves efficiency by streamlining the workflow thus becomes a major asset for professional employees.</p>
+                            
+                        </div>
+                    </div>
+
+                    <div id="comments" class="pq-comment-area">
+                    
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div id="secondary" class="sidebar widget-area">
+                       
+                        <div id="categories-2" class="widget widget_categories">
+                            <h2 class="widget-title">Career Opportunities</h2>
+                            <ul>
+                                <li>
+                                   Office Assistant
+                                </li>
+                                <li>Administrative Assistant</li>
+                                <li>Office Secretary</li>
+                                <li>Data/Business Analyst</li>
+                                <li>Research Analyst</li>
+                                
+                            </ul>
+                        </div>
+                        <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                            <h2 class="widget-title">Technical Skills</h2>
+                            <ul>
+                                <li>Excel</li>
+                                
+                                <li>Data Sorting & Filtering</li>
+                                <li>Charts & Tables</li>
+                                <li>Working with data</li>
+                                <li>Analysis</li>
+                                
+                            </ul>
+                        </div>
+                        {% comment %} <div id="meta-2" class="widget widget_meta">
+                            <img src="{% static 'images/msoffc.jpg' %}">
+                        </div>
+                         {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Blog-Single End-->
+{% endblock %}

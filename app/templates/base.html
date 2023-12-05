@@ -618,16 +618,21 @@
                                         <li class="menu-item">
                                             <a href="/contact-us" class="menu-item current-menu-item manu-item-has-children {% if request.resolver_match.url_name == 'contact-us' %}active{% endif %}">Contact Us</a>
                                         </li>
+
+                                        <li class="menu-item">
+                                            <a href="{% url 'resume' %}" class="pq-button" style="margin-left:20px;">
+                                                <div class="pq-button-block">
+                    
+                                                    <span class="pq-button-text" style="color:white">Build Your Resume</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+
                                     </ul>
                                 </div>
                             </div>
-                          
-                            <a href="{% url 'resume' %}" class="pq-button" style="margin-left:20px;">
-                                <div class="pq-button-block">
-    
-                                    <span class="pq-button-text">Resume Building</span>
-                                </div>
-                            </a>
+                               
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">

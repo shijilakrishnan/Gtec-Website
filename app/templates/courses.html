@@ -1,6 +1,21 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+<style>
+    @media (max-width: 768px) {
+        .pq-blog-post {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .pq-blog-post .pq-post-media {
+            margin-bottom: 20px;
+        }
+    }
+</style>
+
     <div class="pq-breadcrumb pq-bg-dark pq-bg-img-2">
         <div class="container">
             <div class="row align-items-center">
@@ -96,7 +111,7 @@
                         <div class="item" style="padding-right: 20px;">
                             <div class="pq-blog-post">
                                 <div class="pq-post-media">
-                                    <img src="{% static 'images/blog/multimedia.jpg' %}" alt="blog-img">
+                                    <img src="{% static 'images/blog/image_123650291 (1).jpg' %}" alt="blog-img">
                                    
                                 </div>
                                 <div class="pq-blog-contain">
@@ -144,13 +159,13 @@
                         <div class="item" style="padding-right: 20px;">
                             <div class="pq-blog-post">
                                 <div class="pq-post-media">
-                                    <img src="{% static 'images/blog/accounting.jpg' %}" alt="blog-img">
+                                    <img src="{% static 'images/blog/multimedia.jpg' %}" alt="blog-img">
                                   
                                 </div>
                                 <div class="pq-blog-contain">
                                     <div class="pq-post-meta">
                                
-                                            <h4 style="text-align: center;">MS Office</h4>
+                                            <h4 style="text-align: center;">Digital Marketing</h4>
                                        
                                     </div>
                                    
@@ -164,21 +179,17 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="item" style="padding-right: 20px;">
                             <div class="pq-blog-post">
                                 <div class="pq-post-media">
                                     <img src="{% static 'images/blog/accounting.jpg' %}" alt="blog-img">
-                                  
                                 </div>
                                 <div class="pq-blog-contain">
                                     <div class="pq-post-meta">
-                               
-                                            <h4 style="text-align: center;">Hardware</h4>
-                                       
+                                        <h4 style="text-align: center;">Hardware & CCTV</h4>
                                     </div>
-                                   
                                     <p>Students will learn to build computers, troubleshoot hardware and software problems, networking, safety in the workplace, and basic electronics related to computer hardware.</p>
-                                    
                                     <a href="/hardware" class="pq-button pq-btn-link">
                                         <div class="pq-button-block">
                                             <span class="pq-button-text">Read More</span>
@@ -187,8 +198,8 @@
                                 </div>
                             </div>
                         </div>
-                                
-                            </div>
+                        
+                        </div>
                         </div>
                     
                     </div>

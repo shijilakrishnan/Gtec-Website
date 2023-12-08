@@ -1,19 +1,51 @@
+
+None selected
+
+Skip to content
+Using Gmail with screen readers
+1 of 545
+(no subject)
+Inbox
+
+G-TEC Programming <gtecprogramming@gmail.com>
+15:19 (0 minutes ago)
+to me
+
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
 <style>
-    @media (max-width: 768px) {
-        .pq-blog-post {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
+    /* CSS for responsiveness */
+    /* Your existing CSS code for responsiveness */
+    /* ... (your previous CSS code) ... */
     
-        .pq-blog-post .pq-post-media {
-            margin-bottom: 20px;
+    /* Adjustments for courses layout */
+    .courses-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px; /* Adjust for column gaps */
+        margin-right: -10px; /* Adjust for column gaps */
+    }
+    
+    .items {
+        flex: 0 0 calc(33.33% - 20px); 
+        max-width: calc(33.33% - 20px); 
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    
+    /* Adjustments for mobile view */
+    @media (max-width: 767px) {
+        .items {
+            flex: 0 0 100%;
+            max-width: 100%;
+          
         }
     }
+    
+    /* CSS for responsiveness */
+
+
 </style>
 
     <div class="pq-breadcrumb pq-bg-dark pq-bg-img-2">
@@ -56,15 +88,15 @@
     <!--Blog Start-->
     <section class="blog">
         <div class="container">
-            
+            <div class="row">
                 <div class="col-lg-12">
                    
-                    <div style="width: 100%; height: 100%; margin: 10px;">
-                      <div style="display: flex;">
-                        <div class="item" style="padding-right: 20px;">
+                   
+                        <div style="display: flex; flex-wrap: wrap;margin-left:60px">
+                        <div class="items" style="padding-right: 20px;">
                             <div class="pq-blog-post">
                                 <div class="pq-post-media">
-                                    <img src="{% static 'images/blog/accounting.jpg' %}" alt="blog-img">
+                                    <img src="{% static 'images/blog/gtecpayyanur_accounting.jpg' %}" alt="blog-img">
                                    
                                 </div>
                                 <div class="pq-blog-contain">
@@ -85,7 +117,7 @@
                             </div>
                         </div>
                    
-                        <div class="item" style="padding-right: 20px;" >
+                        <div class="items" style="padding-right: 20px;" >
                             <div class="pq-blog-post">
                                 <div class="pq-post-media">
                                     <img src="{% static 'images/blog/gtecpayyanur_software.jpg' %}" alt="blog-img">
@@ -108,7 +140,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item" style="padding-right: 20px;">
+                        <div class="items" style="padding-right: 20px;">
                             <div class="pq-blog-post">
                                 <div class="pq-post-media">
                                     <img src="{% static 'images/blog/gtecpayyanur_multi.jpg' %}" alt="blog-img">
@@ -117,10 +149,10 @@
                                 <div class="pq-blog-contain">
                                     <div class="pq-post-meta">
                                
-                                            <h4 style="text-align: center;">Multimedia & Animation</h4>
+                                            <h5 style="text-align: center;">Multimedia & Animation</h5>
                                        
                                     </div>
-                                   
+                                             
                                     <p>It is a multidisciplinary sector and covers many fields like motion graphics, animation, cinematography, modelling, storyboarding, visual effects and more.</p>
                                     
                                     <a href="/multimedia" class="pq-button pq-btn-link">
@@ -132,11 +164,11 @@
                             </div>
                         </div>
                     </div>
-                    <div style="display: flex; " >
-                        <div class="item"  style="padding-right: 20px;">
+                    <div style="display: flex; flex-wrap: wrap;margin-left:60px ">
+                        <div class="items"  style="padding-right: 20px;">
                             <div class="pq-blog-post">
                                 <div class="pq-post-media">
-                                    <img src="{% static 'images/blog/multimedia.jpg' %}" alt="blog-img">
+                                    <img src="{% static 'images/blog/4.jpg' %}" alt="blog-img">
                                   
                                 </div>
                                 <div class="pq-blog-contain">
@@ -156,7 +188,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item" style="padding-right: 20px;">
+                        <div class="items" style="padding-right: 20px;">
                             <div class="pq-blog-post">
                                 <div class="pq-post-media">
                                     <img src="{% static 'images/blog/gtecpayyanur_accounting.jpg' %}" alt="blog-img">
@@ -179,17 +211,21 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="item" style="padding-right: 20px;">
+                        <div class="items" style="padding-right: 20px;">
                             <div class="pq-blog-post">
                                 <div class="pq-post-media">
-                                    <img src="{% static 'images/blog/accounting.jpg' %}" alt="blog-img">
+                                    <img src="{% static 'images/blog/5.jpg' %}" alt="blog-img">
+                                  
                                 </div>
                                 <div class="pq-blog-contain">
                                     <div class="pq-post-meta">
-                                        <h4 style="text-align: center;">Hardware & CCTV</h4>
+                               
+                                            <h4 style="text-align: center;">Hardware</h4>
+                                       
                                     </div>
+                                   
                                     <p>Students will learn to build computers, troubleshoot hardware and software problems, networking, safety in the workplace, and basic electronics related to computer hardware.</p>
+                                    
                                     <a href="/hardware" class="pq-button pq-btn-link">
                                         <div class="pq-button-block">
                                             <span class="pq-button-text">Read More</span>
@@ -198,14 +234,15 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        </div>
+                                
+                            </div>
                         </div>
                     
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </section>
     <!--Blog End-->
     <div class="pq-section pq-style-1 text-center">
@@ -213,6 +250,8 @@
       
        
     </div>
+  
+    <!--Client Start-->
     <div class="client pq-bg-dark py-0">
         <div class="container-fluid">
             <div class="row">

@@ -150,6 +150,11 @@ def resume2(request):
 def resume3(request):
     return render(request,'resume3.html')
 
+def digitalmarketing(request):
+    return render(request,'digitalmarketing/digitalmarketing.html')
+
+def pddm(request):
+    return render(request,'digitalmarketing/pddm.html')
 def enquiry(request):
     if request.method == "POST":
         fname = request.POST['fname']

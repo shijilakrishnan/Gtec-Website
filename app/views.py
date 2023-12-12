@@ -155,6 +155,12 @@ def digitalmarketing(request):
 
 def pddm(request):
     return render(request,'digitalmarketing/pddm.html')
+
+def ddm(request):
+    return render(request,'digitalmarketing/ddm.html')
+
+def cdm(request):
+    return render(request,'digitalmarketing/cdm.html')
 def enquiry(request):
     if request.method == "POST":
         fname = request.POST['fname']

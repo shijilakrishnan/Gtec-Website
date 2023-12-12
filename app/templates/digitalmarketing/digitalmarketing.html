@@ -2,6 +2,32 @@
 {% load static %}
 {% block content %}
 
+<style>
+    .tagcloud {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tagcloud div {
+        background-color: #1397da;
+        color: #fff;
+        border: 3px solid #1397da;
+        border-radius: 5px;
+        width: 20%;
+        margin-bottom: 10px;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .tagcloud div {
+            width: 45%; /* Adjust width for smaller screens */
+            margin: 5px; /* Adjust margins for smaller screens */
+        }
+    }
+</style>
     <!--Blog-Single Start-->
     <h2 style="color:#008db0;text-align:center;">Digital Marketing</h2>
     <section class="blog-single">
@@ -10,7 +36,7 @@
                 <div class="col-lg-8">
                     <div class="pq-blog-post">
                         <div class="pq-post-media">
-                            <img src="{% static 'images/digitalm.jpeg' %}" alt="blog-img" style="width:700px;height:500px;">
+                            <img src="{% static 'images/gtecpayyanur_digitalm.jpeg' %}" alt="blog-img" style="width:700px;height:500px;">
                         </div>
                         <div class="pq-blog-contain">
                             
@@ -39,13 +65,32 @@
                             </ul>
                         </div>
                         <div id="meta-2" class="widget widget_meta">
-                            <img src="{% static 'images/digi1.jpg' %}">
+                            <img src="{% static 'images/gtecpayyanur_digi1.jpg' %}">
                         </div>
                         {% comment %} <div id="meta-2" class="widget widget_meta">
                             <img src="{% static 'images/msoffc.jpg' %}">
                         </div>
                          {% endcomment %}
                     </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                <h2 style="text-align: center;">CERTIFICATE COURSES</h2> <br>
+                <div class="tagcloud">
+                    <div>Certificate Courses In Digital Marketing</div>
+                    
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                <h2 style="text-align: center;">DIPLOMA COURSES</h2> <br>
+                <div class="tagcloud">
+                    <div>Professional Diploma In Digital Marketing(PDDM)</div>
+                    <div>Diploma In Digital Marketing(DDM)</div>
+                    
                 </div>
             </div>
         </div>

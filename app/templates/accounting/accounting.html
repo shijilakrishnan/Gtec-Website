@@ -3,6 +3,108 @@
 {% load static %}
 {% block content %}
 
+<section class="all-services">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4">
+                <div class="pq-widget"  style="width:600px;">
+                    <div class="pq-widget pq-widget-port p-0">
+                        <div class="menu-service-menu-container">
+                            <h3>Certified Courses</h3><br>
+                            <ul id="menu-service-menu" class="menu">
+                                <li>
+                                    <a href="software-development.html" aria-current="page">Tally Prime</a>
+                                </li>
+
+                                <li>
+                                    <a href="web-development.html" aria-current="page">GCC VAT Using Tally</a>
+                                </li>
+
+                                <li>
+                                    <a href="mobile-development.html" aria-current="page">GST Using Tally</a>
+                                </li>
+
+                                <li>
+                                    <a href="app-development.html" aria-current="page">QuickBooks</a>
+                                </li>
+
+                                <li>
+                                    <a href="qa-testing.html" aria-current="page">SAGE 50</a>
+                                </li>
+                                <li>
+                                    <a href="qa-testing.html" aria-current="page">GST Simulation </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                {% comment %} <div id="secondary" class="sidebar widget-area"> {% endcomment %}
+                    
+                   
+                        <img src="{% static 'images/certi_gtec.png' %}" alt="" style="margin-left:70%;height:100%;width:100%;">
+                   
+                {% comment %} </div> {% endcomment %}
+            </div>
+           
+            {% comment %} <div class="col-xl-8 col-lg-8 mt-4 mt-lg-0">
+                <img src="{% static 'images/gtecpayyanur_accnt.jpg' %}" alt="" style="height:80%;margin-left:90px;width:70%;">
+               
+            </div> {% endcomment %}
+        </div>
+    </div>
+</section>
+
+
+<section class="all-services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                {% comment %} <div id="secondary" class="sidebar widget-area"> {% endcomment %}
+                    
+                   
+                        <img src="{% static 'images/certi_gtec.png' %}" alt="" style="height:60%;padding-left:30%">
+                   
+                {% comment %} </div> {% endcomment %}
+            </div>
+            <div class="col-xl-4 col-lg-4" style="padding-left:20%">
+                <div class="pq-widget"  style="width:600px;">
+                    <div class="pq-widget pq-widget-port p-0">
+                        <div class="menu-service-menu-container">
+                            <h3>Diploma Courses</h3><br>
+                            <ul id="menu-service-menu" class="menu">
+                                <li>
+                                    <a href="software-development.html" aria-current="page">DIFA</a>
+                                </li>
+
+                                <li>
+                                    <a href="web-development.html" aria-current="page">PDIFA</a>
+                                </li>
+
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+           
+            {% comment %} <div class="col-xl-8 col-lg-8 mt-4 mt-lg-0">
+                <img src="{% static 'images/gtecpayyanur_accnt.jpg' %}" alt="" style="height:80%;margin-left:90px;width:70%;">
+               
+            </div> {% endcomment %}
+        </div>
+    </div>
+</section>
+
+
+    {% endblock %}
+
+
+{% comment %}     
 <style>
     .tagcloud {
         display: flex;
@@ -29,7 +131,7 @@
         }
     }
 </style>
-    <!--Breadcrumb Start-->
+
     <div>
         <div class="container">
             <div class="row align-items-center">
@@ -44,9 +146,7 @@
             </div>
         </div>
     </div>
-    <!--Breadcrumb End-->
-
-    <!--Left Sidebar Start-->
+  
     <section class="left-sidebar">
         <div class="container">
             <div class="row">
@@ -60,7 +160,7 @@
                                     </div>
                                     <div class="pq-blog-contain">
                                         
-                                        <!-- <h5 class="pq-blog-title"><a href="app-promotes-sales-profits-in-it-solutions.html">Accounting</a></h5> -->
+                                       
                                         
                                     </div>
                                 </div>
@@ -98,7 +198,7 @@
             </div>
         </div>
     </section>
-    <!--Left Sidebar End-->
+   
      
     <div>
         <div id="tag_cloud-2" class="widget widget_tag_cloud">    
@@ -107,7 +207,7 @@
                 
                 <div style="padding-top:30px;">Tally</div>
                 <div style="padding-top:30px;">GCC VAT-Tally</div>
-                {% comment %} <div>International Assosiation of Bookkeepers</div> {% endcomment %}
+               
                
                
             </div>
@@ -130,5 +230,4 @@
     </div>
             
             </div>
-        </div>
-    {% endblock %}
+        </div> {% endcomment %}

@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+{% block title %} SAP SD | G-TEC Payyanur{% endblock %}
+{% load static %}
+{% block content %}
+<h1 style="text-align: center; color: #008db0;">SAP SALES AND DISTRIBUTION</h1>
+                       
+
+
+    <!--Blog-Single Start-->
+    <section class="blog-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="pq-blog-post">
+                        
+                        <div class="pq-blog-contain">
+                            
+                            <p style="color:black;">Learn Material Management the Global way with SAP MM. SAP Material Management Power User module will take you from Procurement to Purchase and Inventory Management
+
+                                A 360-degree module in SD to make you a professional employable anywhere in the world on SAP platform on any automated platforms.</p>
+
+                        </div>
+                </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0" style="float:right;">
+                                 
+                        
+                    <div id="categories-2" class="widget widget_categories">
+                        <div class="pq-post-media">
+                            <img src="{% static 'images/sd.jpg' %}" alt="blog-img">
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3  style="text-align: center; color: #008db0;"><u>Course Outline</u></h3>
+            <br>
+         
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                      <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                         <img src="{% static 'images/icons8-drop-down-96.png' %}" style="width:20px;"> Introduction to ERP
+                      </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                            <li>Principle concept of Sales and Distribution</li>
+                            <li>Organizational structure</li>
+                            <li>Master Data Management (PP)</li>
+                            <ul style="list-style-type:circle;">
+                                <li>Customer Master Data</li>
+                                <li>Material Master Data</li>
+                                <li>Customer Material Information Record (CMIC)</li>
+                                <li>Output Master Data</li>
+                            </ul>
+                            <li>Sales area</li>
+                            <li>Order to cash</li>
+
+                            <ul style="list-style-type:circle;">
+                                <li>Inquiry</li>
+                                <li>Sales Order</li>
+                                <li>Picking</li>
+                                
+                            </ul>
+
+
+                            <li>Return Process</li>
+                            <li>Billing of Bill of Materials</li>
+                            <li>Consignment Process</li>
+                            <li>Scheduling agreement</li>
+                            <li>Billing Plan</li>
+                            <li>Sales analysis</li>
+                            <li>Types of order and document type</li>
+                            <li>Discount v/s Rebate</li>
+                            <li>Third Party Sales.</li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapse10">
+                        <img src="{% static 'images/icons8-drop-down-96.png' %}" style="width:20px;"> &nbsp; Exit Profile
+                      </a>
+                    </div>
+                    <div id="collapse10" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body">
+                          <ul>
+                              <li>Get Practical Knowledge in SAP SD Power User</li>
+                              <li> Get a good knowledge in SAP Power User</li>
+                              <li> Able to do financial transactions through SAP</li>
+                              <li> Can shine your cv with SAP International Certificate</li>
+                              
+                                     </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapse11">
+                        <img src="{% static 'images/icons8-drop-down-96.png' %}" style="width:20px;"> &nbsp; Career Path
+                      </a>
+                    </div>
+                    <div id="collapse11" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body">
+                          <ul>
+                              <li>SAP Sales and Distribution Manager.</li>
+                              <li> Sales and Distribution Executive.</li>
+                              <li> Logistics Executive</li>
+                              
+                                     </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div><br>
+                    <h5>2 CERTIFICATES</h5>
+                    ★ SAP SD (International Certificate)<br>
+★ SAP SD (G-TEC Certificate)
+                  </div>
+  
+
+            </div>
+                    
+        </div>
+    </section>
+  {% endblock %}

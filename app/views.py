@@ -138,6 +138,32 @@ def gccvaat(request):
 def pdifas(request):
     return render(request,'accounting/pdifas.html')
 
+def quickbook(request):
+    return render(request,'accounting/quickbook.html')
+
+def tallyprime(request):
+    return render(request,'accounting/tallyprime.html')
+
+def sage(request):
+    return render(request,'accounting/sage50.html')
+
+def gsttally(request):
+    return render(request,'accounting/gsttally.html')
+
+def simulation(request):
+    return render(request,'accounting/simulation.html')
+
+def fico(request):
+    return render(request,'accounting/fico.html')
+
+def mm(request):
+    return render(request,'accounting/mm.html')
+
+def pp(request):
+    return render(request,'accounting/pp.html')
+
+def sd(request):
+    return render(request,'accounting/sd.html')
 def resume(request):
     return render(request,'resume.html')
 

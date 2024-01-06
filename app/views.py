@@ -66,8 +66,14 @@ def ui(request):
     return render(request,'software/ui-ux.html')
 
 def geep(request):
-    return render(request,'software/geep.html')
+    return render(request,'software/Geep.html')
 
+def ADDA(request):
+    return render(request,'software/ADDA.html')
+def DWD(request):
+    return render(request,'software/DWD.html')
+def DDE(request):
+    return render(request,'software/DDE.html')
 def adba(request):
     return render(request,'caad/adba.html')
 
@@ -80,19 +86,47 @@ def dba(request):
 def did(request):
     return render(request,'caad/did.html')
 
+def AV(request):
+    return render(request,'caad/AV.html')
+
+def AC(request):
+    return render(request,'caad/AC.html')
+
+def Lumion(request):
+    return render(request,'caad/Lumion.html')
+
+def Sketchup(request):
+    return render(request,'caad/Sketchup.html')
+
+def Revit(request):
+    return render(request,'caad/Revit.html')
+
+def A3DS(request):
+    return render(request,'caad/A3DS.html')
 def dcss(request):
     return render(request,'hardware/dcss.html')
 
 def ao(request):
-    return render(request,'msoffice/ao.html')
+    return render(request,'software/AO.html')
 
 def go(request):
-    return render(request,'msoffice/go.html')
+    return render(request,'software/GO.html')
 
 def adv(request):
     return render(request,'msoffice/adv.html')
 
+def Dataentry(request):
+    return render(request,'software/Dataentry.html')
 
+# def MSAccess(request):
+#     return render(request,'software/MSAccess.html')
+def CTTC(request):
+    return render(request,'software/CTTC.html')
+def CTTP(request):
+    return render(request,'software/CTTP.html')
+
+def DCA(request):
+    return render(request,'software/DCA.html')
 def mdda(request):
     return render(request,'multimedia/mdda.html')
 
@@ -187,6 +221,55 @@ def ddm(request):
 
 def cdm(request):
     return render(request,'digitalmarketing/cdm.html')
+
+def ch(request):
+    return render(request,'hardware/computer_hardware.html')
+
+def cctv(request):
+    return render(request,'hardware/cctv.html')
+
+def chsi(request):
+    return render(request,'hardware/chsi.html')
+def hdchn(request):
+    return render(request,'hardware/hdchn.html')
+
+def DA(request):
+    return render(request,'multimedia/DA.html')
+
+def PDDM(request):
+    return render(request,'multimedia/PDDM.html')
+
+def Android(request):
+    return render(request,'software/Android.html')
+
+def CCDS(request):
+    return render(request,'software/CCDS.html')
+
+def CCDA(request):
+    return render(request,'software/CCDA.html')
+
+def Django(request):
+    return render(request,'software/Django.html')
+
+def Figma(request):
+    return render(request,'software/Figma.html')
+
+def JavaSE(request):
+    return render(request,'software/JavaSE.html')
+
+def JavaEE(request):
+    return render(request,'software/JavaEE.html')
+def Mysql(request):
+    return render(request,'software/Mysql.html')
+
+def Python(request):
+    return render(request,'software/Python.html')
+
+def c(request):
+    return render(request,'software/C.html')
+
+def cpp(request):
+    return render(request,'software/CPP.html')
 def enquiry(request):
     if request.method == "POST":
         fname = request.POST['fname']

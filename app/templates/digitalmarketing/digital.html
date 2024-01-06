@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% block title %} Digital Marketing Courses | G-TEC Payyanur{% endblock %}
+{% load static %}
+{% block content %}
+
+<style>
+    .tagcloud {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tagcloud div {
+        background-color: #1397da;
+        color: #fff;
+        border: 3px solid #1397da;
+        border-radius: 5px;
+        width: 20%;
+        margin-bottom: 10px;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .tagcloud div {
+            width: 45%; /* Adjust width for smaller screens */
+            margin: 5px; /* Adjust margins for smaller screens */
+        }
+    }
+</style>
+    <!--Blog-Single Start-->
+    <h2 style="color:#008db0;text-align:center;">Digital Marketing</h2>
+    <section class="blog-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="pq-blog-post">
+                        <div class="pq-post-media">
+                            <img src="{% static 'images/digitalm.jpeg' %}" alt="blog-img" style="width:700px;height:500px;">
+                        </div>
+                        <div class="pq-blog-contain">
+                            
+                            <p>Digital Marketing is the newest, trendiest skill that the market is seeking to acquire.It’s a skill that helps you upgrade and opens the door to plenty of opportunities</p>
+                            
+                        </div>
+                    </div>
+
+                    <div id="comments" class="pq-comment-area">
+                    
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div id="secondary" class="sidebar widget-area">
+                       
+                        <div id="categories-2" class="widget widget_categories">
+                            <h2 class="widget-title">Courses We Offer</h2>
+                            <ul>
+                                <li>
+                                    <a href="digitalmarketing/pddm">Professional Diploma In Digital Marketing (PDDM)</a>
+                                </li>
+                                <li> <a href="digitalmarketing/ddm">Diploma In Digital Marketing (DDM)</a></li>
+                                <li> <a href="digitalmarketing/cdm">Certificate Course In Digital Marketing (CDM)</a></li>
+                                
+                                
+                            </ul>
+                        </div>
+                        <div id="meta-2" class="widget widget_meta">
+                            <img src="{% static 'images/digi1.jpg' %}">
+                        </div>
+                        {% comment %} <div id="meta-2" class="widget widget_meta">
+                            <img src="{% static 'images/msoffc.jpg' %}">
+                        </div>
+                         {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                <h2 style="text-align: center;">CERTIFICATE COURSES</h2> <br>
+                <div class="tagcloud">
+                    <div>Certificate Courses In Digital Marketing</div>
+                    
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                <h2 style="text-align: center;">DIPLOMA COURSES</h2> <br>
+                <div class="tagcloud">
+                    <div>Professional Diploma In Digital Marketing(PDDM)</div>
+                    <div>Diploma In Digital Marketing(DDM)</div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Blog-Single End-->
+
+
+{% endblock %}

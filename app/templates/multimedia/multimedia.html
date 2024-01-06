@@ -1,188 +1,135 @@
 {% extends 'base.html' %}
-{% block title %} Multimedia & Animation Courses | G-TEC Payyanur{% endblock %}
+{% block title %} Multimedia Courses | G-TEC Payyanur{% endblock %}
 {% load static %}
 {% block content %}
-<style>
-    .tagcloud {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .tagcloud div {
-        background-color: #1397da;
-        color: #fff;
-        border: 3px solid #1397da;
-        border-radius: 5px;
-        width: 20%;
-        margin-bottom: 10px;
-        padding: 10px;
-        text-align: center;
-        margin: 10px;
-    }
-
-    @media only screen and (max-width: 768px) {
-        .tagcloud div {
-            width: 45%; /* Adjust width for smaller screens */
-            margin: 5px; /* Adjust margins for smaller screens */
-        }
-    }
-</style>
-    <!--Breadcrumb Start-->
-    <div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <nav aria-label="breadcrumb">
-                        <div class="pq-breadcrumb-title">
-                            <h1 style="text-align: center;color:#008db0;">Multimedia & Animations</h1>
-                        </div>
-                       
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Breadcrumb End-->
-
-    <!--Left Sidebar Start-->
-    <section class="left-sidebar">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="pq-blog pq-blog-col-1">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="pq-blog-post">
-                                    <div class="pq-post-media">
-                                        <img loading="lazy" src="{% static 'images/mutltimedia.jpg' %}" alt="blog-img">
-                                    </div>
-                                    <div class="pq-blog-contain">
-                                        
-                                        <h5 class="pq-blog-title"><a href="app-promotes-sales-profits-in-it-solutions.html">Multimedia & Animations</a></h5>
-                                        <p>This division is for the creative lot. It provides the most demanding course for the future. Advanced coverage in graphics, web and multimedia with animation is covered in this division adorned by latest infrastructure.</p>
-                                        
+<section class="banner_main">
+    <div class="container-fluid">
+       <div class="row d_flex">
+          
+          <div class="col-xl-6 col-lg-6 col-md-12">
+             <div class="text-bg" >
+                <section class="all-services" style="max-width: 100%; overflow-x: auto;">
+                    <div class="container">
+                        <div class="row" style="margin-left: 10px; margin-right: 10px;">
+                            <div class="col-xl-4 col-lg-4" style="max-width: 100%; flex: 0 0 100%; padding: 0;">
+                                <div class="pq-widget" style="max-width: 100%; width: 100%; overflow: auto;">
+                                    <div class="pq-widget pq-widget-port p-0">
+                                        <div class="menu-service-menu-container">
+                                            <h3 style="font-size: 1.5rem;">Certified Courses</h3><br>
+                                            <ul id="menu-service-menu" class="menu" style="padding-left: 0;">
+                                                <li>
+                                                    <a href="multimedia/mdma" aria-current="page">MASTER DIPLOMA IN MULTIMEDIA AND ANIMATION (MDMA)</a>
+                                                </li>
+                
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
+                                
                             </div>
-                          
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4 mt-lg-0">
-                                 
-                        
-                        <div id="categories-2" class="widget widget_categories">
-                            <h2 class="widget-title">Courses We Offer</h2>
-                            <ul>
-                                <li>
-                                    <a href="multimedia/mdda">Masters Diploma in Digital Animation(MDDA)</a>
-                                </li>
-                                <li>
-                                    <a href="multimedia/mdma">Masters Diploma in Multimedia & Animation (MDMA)</a>
-                                </li>
-                                <li>
-                                    <a href="multimedia/dve">Diploma in Video Editing(DVE)</a>
-                                </li>
-                                <li>
-                                    <a href="multimedia/ddi">Diploma in Digital Imaging(DDI)</a>
-                                </li>
-                                <li>
-                                    <a href="multimedia/dwa">Diploma in Web Design & Animation(DWA)</a>
-                                </li>
-                                <li>
-                                    <a href="multimedia/gwe">Graphic & Web Expert(GWE)</a>
-                                </li>
-                                <li>
-                                    <a href="multimedia/da"> Diploma in Animation(DA)</a>
-                                    
-                                </li>  
-                                <li>
-                                    <a href="multimedia/dma">  Diploma in Multimedia & Animation(DMA)</a>
-                                    
-                                </li> 
-                                <li>
-                                    <a href="multimedia/dtp"> Desk Top Publishing(DTP)</a>
-                                    
-                                </li> 
-                                <li>
-                                    <a href="multimedia/dgd"> Diploma in Graphic Designing(DGD)</a>
-                                    
-                                </li> 
-                                <li>
-                                    <a href="multimedia/motiongraphics"> Motion Graphics</a>
-                                    
-                                </li> 
-                                <li>
-                                    <a href="multimedia/digitalmrkt"> Digital Marketing</a>
-                                    
-                                </li> 
-                                   
-                            </ul>
+                    </section>
+             </div>     
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12">
+            <div class="text-bg" >
+                <img src="{% static 'images/ed.jpg' %}" alt="" class="img-fluid d-block mx-auto" style="height:200px;margin-top:60px;width:500px; margin-left:120px;">
+            </div>     
+         </div>
+         
+       </div>
+    </div>
+ </section>
+ 
+<section class="banner_main" style="margin-top:0;padding-top:0;">
+    <div class="container-fluid">
+       <div class="row d_flex">
+        <div class="col-xl-6 col-lg-6 col-md-12">
+            <div class="text-bg" >
+                <img src="{% static 'images/ed.jpg' %}" alt="" class="img-fluid d-block mx-auto" style="height:200px;margin-top:60px;width:500px; margin-left:120px;">
+            </div>     
+         </div>
+          <div class="col-xl-6 col-lg-6 col-md-12">
+             <div class="text-bg" >
+                <section class="all-services" style="max-width: 100%; overflow-x: auto;">
+                    <div class="container">
+                        <div class="row" style="margin-left: 10px; margin-right: 10px;">
+                            <div class="col-xl-4 col-lg-4" style="max-width: 100%; flex: 0 0 100%; padding: 0;">
+                                <div class="pq-widget" style="max-width: 100%; width: 100%; overflow: auto;">
+                                    <div class="pq-widget pq-widget-port p-0">
+                                        <div class="menu-service-menu-container">
+                                            <h3 style="font-size: 1.5rem;">Master Courses</h3><br>
+                                            <ul id="menu-service-menu" class="menu" style="padding-left: 0;">
+                                                <li>
+                                                    <a href="multimedia/mdma" aria-current="page">MASTER DIPLOMA IN MULTIMEDIA AND ANIMATION (MDMA)</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
                         </div>
-                        
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div id="tag_cloud-2" class="widget widget_tag_cloud">
-                <h2  style="text-align: center;">CERTIFICATE COURSES</h2>  <br>     
-                <div class="tagcloud">
-                   
-                    <div>ADOBE PHOTOSHOP</div>
-                    <div>ADOBE ILLUSTRATOR</div>
-                    <div>ADOBE AFTER EFFECTS</div>
-                   
-                  
-                    <div>ADOBE ANIMATE</div>
-                    <div>ADOBE PREMIERE</div>
-                    <div>FCP-FINAL CUT PRO</div>
-                  
-                    
-                   
-    
-                    <div>3Ds MAX</div>
-    
-                    <div>COREL DRAW</div>
+                    </section>
+             </div>     
+          </div>
+          
+         
+       </div>
+    </div>
+ </section>
+
+<section class="banner_main" style="margin-top:0; padding-top:0;" >
+    <div class="container-fluid">
+       <div class="row d_flex">
+          
+          <div class="col-xl-6 col-lg-6 col-md-12">
+             <div class="text-bg" >
+                <section class="all-services" style="max-width: 100%; overflow-x: auto;">
+                    <div class="container">
+                        <div class="row" style="margin-left: 10px; margin-right: 10px;">
+                            <div class="col-xl-4 col-lg-4" style="max-width: 100%; flex: 0 0 100%; padding: 0;">
+                                <div class="pq-widget" style="max-width: 100%; width: 100%; overflow: auto;">
+                                    <div class="pq-widget pq-widget-port p-0">
+                                        <div class="menu-service-menu-container">
+                                            <h3 style="font-size: 1.5rem;">Diploma Courses</h3><br>
+                                            <ul id="menu-service-menu" class="menu" style="padding-left: 0;">
+                                                <li>
+                                                    <a href="multimedia/DA" aria-current="page">Diploma In Animation</a>
+                                                </li>
                 
-                </div>
-            </div>
-        </div>
-    
-        <div>
-            <div id="tag_cloud-2" class="widget widget_tag_cloud">
-                <h2  style="text-align: center;">DIPLOMA COURSES</h2>  <br>     
-                <div class="tagcloud">
-                   
-                    <div>DIPLOMA IN VIDEO EDITING(DVE)</div>
-                    <div>DIPLOMA IN DIGITAL IMAGING(DDI)</div>
-                    <div>DIPLOMA IN WEB DESIGN & ANIMATION(DWA)</div>
-                    
-                    <div>DIPLOMA IN ANIMATION</div>
-                    <div>DIPLOMA IN MULTIMEDIA & ANIMATION</div>
-                    <div>DIPLOMA IN GRAPHIC DESIGNING</div>
-                    <div>DIPLOMA IN MOTION GRAPHICS</div>
-                    
-                    </div>
-                </div>
-            </div>
-            <div id="tag_cloud-2" class="widget widget_tag_cloud">
-                <h2  style="text-align: center;">POST GRADUATION COURSES</h2>  <br>     
-                <div class="tagcloud">
+                                                <li>
+                                                    <a href="multimedia/PDDM" aria-current="page">Professional Diploma In Digital Marketing (PDDM)</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </section>
+             </div>     
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12">
+            <div class="text-bg" >
+                <img src="{% static 'images/ed.jpg' %}" alt="" class="img-fluid d-block mx-auto" style="height:280px;margin-top:60px;width:500px; margin-left:120px;">
+            </div>     
+         </div>
+         
+       </div>
+    </div>
+ </section>
 
-                    <div>MASTERS DIPLOMA IN DIGITAL ANIMATION(MDDA)</div>
-                    <div>MASTERS DIPLOMA IN MULTIMEDIA & ANIMATION(MDMA)</div>
-                    <div>MASTERS IN NEW MEDIA & WEB TECHNOLOGY(MNMW)</div>
-                    </div>
-                    
-                    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Left Sidebar End-->
 
-{% endblock %}
+
+
+
+
+
+
+        </div>
+    </div>
+</section>
+
+    {% endblock %}

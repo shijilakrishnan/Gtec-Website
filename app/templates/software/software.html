@@ -4,157 +4,198 @@
 {% block content %}
 
 
-<style>
-    .tagcloud {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+<section class="banner_main">
+    <div class="container-fluid">
+       <div class="row d_flex">
+          
+          <div class="col-xl-6 col-lg-6 col-md-12">
+             <div class="text-bg">
+                
 
-    .tagcloud div {
-        background-color: #1397da;
-        color: #fff;
-        border: 3px solid #1397da;
-        border-radius: 5px;
-        width: 20%;
-        margin-bottom: 10px;
-        padding: 10px;
-        text-align: center;
-        margin: 10px;
-    }
+<section class="all-services" style="max-width: 100%; overflow-x: auto;">
+    <div class="container">
+        <div class="row" style="margin-left: 10px; margin-right: 10px;">
+            <div class="col-xl-4 col-lg-4" style="max-width: 100%; flex: 0 0 100%; padding: 0;">
+                <div class="pq-widget" style="max-width: 100%; width: 100%; overflow: auto;">
+                    <div class="pq-widget pq-widget-port p-0">
+                        <div class="menu-service-menu-container">
+                            <h3 style="font-size: 1.5rem;">Certified Courses</h3><br>
+                            <ul id="menu-service-menu" class="menu">
+                                <li>
+                                    <a href="software/Android" aria-current="page">Android With Flutter</a>
+                                </li>
 
-    @media only screen and (max-width: 768px) {
-        .tagcloud div {
-            width: 45%; /* Adjust width for smaller screens */
-            margin: 5px; /* Adjust margins for smaller screens */
-        }
-    }
-</style>
-    <!--Breadcrumb Start-->
-    <div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <nav aria-label="breadcrumb">
-                        <div class="pq-breadcrumb-title">
-                            <h1 style="text-align: center;color:#008db0;">Software</h1>
-                        </div>
-                       
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Breadcrumb End-->
+                                <li>
+                                    <a href="software/CCDS" aria-current="page">Certificate Course In Data Science</a>
+                                </li>
 
-    <!--Left Sidebar Start-->
-    <section class="left-sidebar">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="pq-blog pq-blog-col-1">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="pq-blog-post">
-                                    <div class="pq-post-media">
-                                        <img loading="lazy" src="{% static 'images/sftwr.jpg' %}" alt="blog-img">
-                                    </div>
-                                    <div class="pq-blog-contain">
-                                        
-                                        <h5 class="pq-blog-title"><a href="app-promotes-sales-profits-in-it-solutions.html">Software</a></h5>
-                                        <p>Courses with duration ranging from 1 months to 2 years have been the prime evidence to the flexibility of G-TEC Software Academy. Beginning from basic computing to the .NET , Python, etc.</p>
-                                        
+                                <li>
+                                    <a href="software/CCDA" aria-current="page">Certificate Course In Data Analytics</a>
+                                </li>
+
+                                <li>
+                                    <a href="software/Django" aria-current="page">Django</a>
+                                </li>
+
+                                <li>
+                                    <a href="software/Figma" aria-current="page">Figma</a>
+                                </li>
+                                <li>
+                                    <a href="software/Java SE" aria-current="page">Java SE</a>
+                                </li>
+                                <li>
+                                    <a href="software/Java EE" aria-current="page">Java EE</a>
+                                </li>
+                                <li>
+                                    <a href="software/Mysql" aria-current="page">MySQL</a>
+                                </li>
+                                <li>
+                                    <a href="software/Python" aria-current="page">Python</a>
+                                </li>
+                                <li>
+                                    <a href="software/C" aria-current="page">Programming in C</a>
+                                </li>
+                                <li>
+                                    <a href="software/CPP" aria-current="page">Programming in C++</a>
+                                </li>
+                                <li>
+                                    <a href="software/GO" aria-current="page">G - Operator</a>
+                                </li>
+                                <li>
+                                    <a href="software/Dataentry" aria-current="page">Data Entry (GADE,GEDA,GMDA)</a>
+                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
+                                
                             </div>
-                          
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4 mt-lg-0">
-                                 
-                        
-                        <div id="categories-2" class="widget widget_categories">
-                            <h2 class="widget-title">Courses We Offer</h2>
-                            <ul>
-                                <li>
-                                    <a href="software/fullstack">Full Stack Developer</a>
-                                </li>
-                                <li>
-                                    <a href="software/pgdca">Post Graduate Diploma in Computer Application(PGDCA)</a>
-                                </li>
-                                <li>
-                                    <a href="software/mdad">Master Diploma in Artifical Intelligence & Data Science</a>
-                                </li>
-                                <li>
-                                    <a href="software/dda">Diploma in Data Analytics(DDA)</a>
-                                </li>
-                                <li>
-                                    <a href="software/ui/ux">Diploma in UI/UX Designing</a>
-                                </li>
-                                <li>
-                                    <a href="software/mse">Master in Software Engineering(MSE)</a>
-                                </li>
-                                <li>
-                                    <a href="software/geep">Graduate Employability Enhancement Program(GEEP)</a>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div id="tag_cloud-2" class="widget widget_tag_cloud">
-                <h2 style="text-align: center;">CERTIFICATE COURSES</h2> <br>
-                <div class="tagcloud">
-                    <div>Full Stack Developer</div>
-                    <div>Python/Django</div>
-                    <div>Programming in C</div>
-                    
-                    <div>Programming in C++</div>
-                    <div>Basics of Python</div>
-                    <div>MySQL</div>
-                    
-                    <div>Java</div>
-                    <div>PHP</div>
-                    <div>.NET</div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div id="tag_cloud-2" class="widget widget_tag_cloud">
-                <h2 style="text-align: center;">DIPLOMA COURSES</h2> <br>
-                <div class="tagcloud">
-                    <div>Post Graduate Diploma in Computer Application(PGDCA)</div>
-                    <div>Master Diploma in Artifical Intelligence & Data Science</div>
-                    <div>Diploma in Data Analytics(DDA)</div>
-                    
-                    <div>Diploma in UI/UX Designing</div>
-                    <div>Diploma in Web Designing(DWD)</div>
-                    <div>Advanced Diploma in Data Analysis(ADDA)</div>
-                    
-                </div>
-            </div>
-        </div>
+                    </section>
+             </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12">
+             <div class="text-bg">
+                <img src="{% static 'images/ed.jpg' %}" alt="" class="img-fluid d-block mx-auto" style="height:1070px;margin-top:60px;margin-left:50px;">
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+    </div>
+</section>
 
-        <div>
-            <div id="tag_cloud-2" class="widget widget_tag_cloud">
-                <h2 style="text-align: center;">POST GRADUATION COURSES</h2> <br>
-                <div class="tagcloud">
-                    <div>Post Graduate Diploma in Computer Application(PGDCA)</div>
-                    <div>Master Diploma in Artifical Intelligence & Data Science</div>
-                    <div>Graduate Employability Enhancement Program(GEEP)</div>
-                  
+<section class="banner_main" style="padding-top:1px;">
+    <div class="container-fluid">
+       <div class="row d_flex">
+          
+          <div class="col-xl-6 col-lg-6 col-md-12">
+             <div class="text-bg">
+                <img src="{% static 'images/ed.jpg' %}" alt=""  class="img-fluid d-block mx-auto"style="height:270px;padding-left:100px;width:100%;padding-right:100px; margin-top:65px;">
+             </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12">
+             <div class="text-bg">
+                <section class="all-services" style="max-width: 100%; overflow-x: auto;">
+                    <div class="container">
+                        <div class="row" style="margin-left: 10px; margin-right: 10px;">
+                            <div class="col-xl-4 col-lg-4" style="max-width: 100%; flex: 0 0 100%; padding: 0;">
+                                <div class="pq-widget" style="max-width: 100%; width: 100%; overflow: auto;">
+                                    <div class="pq-widget pq-widget-port p-0">
+                                        <div class="menu-service-menu-container">
+                                            <h3 style="font-size: 1.5rem;">Master Courses</h3><br>
+                                            <ul id="menu-service-menu" class="menu">
+                                                <li>
+                                                    <a href="software/mse" aria-current="page">Master In Software Engineering (MSE)</a>
+                                                </li>
+                
+                                                <li>
+                                                    <a href="software/pgdca" aria-current="page">Post Graduate Diploma In Computer Application(PGDCA)</a>
+                                                </li>
+                
+                                                
+                                            </ul>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
-            </div>
+                
+                    </div>
         </div>
-       
-          
     </section>
-    <!--Left Sidebar End-->
-{% endblock %}
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <section class="banner_main">
+    <div class="container-fluid">
+       <div class="row d_flex">
+          
+          <div class="col-xl-6 col-lg-6 col-md-12">
+             <div class="text-bg">
+                <section class="all-services" style="max-width: 100%; overflow-x: auto;">
+                    <div class="container">
+                        <div class="row" style="margin-left: 10px; margin-right: 10px;">
+                            <div class="col-xl-4 col-lg-4" style="max-width: 100%; flex: 0 0 100%; padding: 0;">
+                                <div class="pq-widget" style="max-width: 100%; width: 100%; overflow: auto;">
+                                    <div class="pq-widget pq-widget-port p-0">
+                                        <div class="menu-service-menu-container">
+                                            <h3 style="font-size: 1.5rem;">Diploma Courses</h3><br>
+                                            <ul id="menu-service-menu" class="menu">
+                                                <li>
+                                                    <a href="software/ui-ux" aria-current="page">Advanced Diploma In UI/UX Designing</a>
+                                                </li>
+                                                <li>
+                                                    <a href="software/Geep" aria-current="page">Graduate Employability Enhancement Program (GEEP)</a>
+                                                </li>
+                                                <li>
+                                                    <a href="software/ADDA" aria-current="page"> Advanced Diploma In Data Analysis </a>
+                                                </li>
+                                                <li>
+                                                    <a href="software/fullstack" aria-current="page">Full Stack Web Development</a>
+                                                </li>
+                                                <li>
+                                                    <a href="software/DWD" aria-current="page">Diploma In Web Designing</a>
+                                                </li>
+                                                <li>
+                                                    <a href="software/DDE" aria-current="page">Diploma In Data Entry</a>
+                                                </li>
+                                                <li>
+                                                    <a href="software/CTTC" aria-current="page">Computer Teachers Training Course (CTTC)</a>
+                                                </li>
+                
+                                                <li>
+                                                    <a href="software/CTTP" aria-current="page">Computer Teachers Training Program (CTTP)</a>
+                                                </li>
+                
+                                                <li>
+                                                    <a href="software/DCA" aria-current="page">DIPLOMA IN COMPUTER APPLICATION (DCA)</a>
+                                                </li>
+                
+                                                <li>
+                                                    <a href="software/AO" aria-current="page">Advanced Operator (AO)</a>
+                                                </li>
+                
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </section>
+             </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12">
+             <div class="text-bg">
+                <img src="{% static 'images/ed.jpg' %}" alt=""  class="img-fluid d-block mx-auto" style="height:850px;margin-top:60px;margin-left:50px;width:500px;">
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+    {% endblock %}
